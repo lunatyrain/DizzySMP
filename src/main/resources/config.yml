@@ -1,0 +1,4 @@
+# Set by /toggleitem. Controls NORMAL ender pearls / wind charges only.
+# The Infinite Pearl and Infinite Wind Charge always work.
+pearls-enabled: true
+windcharges-enabled: true

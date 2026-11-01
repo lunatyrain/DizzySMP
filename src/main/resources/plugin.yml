@@ -1,0 +1,39 @@
+name: DizzySMP
+version: 1.0.0
+main: dev.dizzysmp.DizzySMPPlugin
+api-version: "26.2"
+description: DizzySMP custom items - Mace Sword, Infinite Pearl and Infinite Wind Charge, plus pearl / wind charge toggles.
+commands:
+  pwhelp:
+    description: Show DizzySMP commands
+    usage: /pwhelp
+    aliases: [pwcchelp]
+  toggleitem:
+    description: Enable or disable normal ender pearls / wind charges for players
+    usage: /toggleitem <pearls|windcharges> [on|off]
+    permission: pearlwindchargecontrol.toggle
+  pearlcooldown:
+    description: Set the Infinite Pearl cooldown in seconds
+    usage: /pearlcooldown <seconds>
+    permission: pearlwindchargecontrol.cooldown
+  infinitepearl:
+    description: Give yourself (or a player) an Infinite Pearl
+    usage: /infinitepearl [player]
+    permission: pearlwindchargecontrol.give
+  infinitewindcharge:
+    description: Give yourself (or a player) an Infinite Wind Charge
+    usage: /infinitewindcharge [player]
+    permission: pearlwindchargecontrol.give
+  macesword:
+    description: Give yourself (or a player) a Mace Sword
+    usage: /macesword [player]
+    permission: macesword.give
+permissions:
+  pearlwindchargecontrol.cooldown:
+    default: op
+  pearlwindchargecontrol.toggle:
+    default: op
+  pearlwindchargecontrol.give:
+    default: op
+  macesword.give:
+    default: op
